@@ -237,3 +237,40 @@ footer {
     top: 20px;
     align-self: start;
 }
+
+
+.three-column-layout {
+    grid-template-columns: 230px minmax(0, 1fr) 200px;
+    gap: 20px;
+}
+
+.three-column-layout .sidebar {
+    position: sticky;
+    top: 20px;
+    align-self: start;
+}
+
+@media (max-width: 1000px) {
+    .three-column-layout {
+        grid-template-columns: 200px minmax(0, 1fr);
+    }
+
+    .three-column-layout .on-this-page {
+        grid-column: 1 / -1;
+        position: static;
+    }
+}
+
+@media (max-width: 700px) {
+    .three-column-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .three-column-layout .sidebar {
+        position: static;
+    }
+
+    .three-column-layout .on-this-page {
+        grid-column: auto;
+    }
+}

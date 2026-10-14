@@ -17,7 +17,7 @@ body {
 }
 
 .page-shell {
-    max-width: 1200px;
+    max-width: 1450px;
     margin: 0 auto;
     padding: 30px 20px 50px;
 }
@@ -240,10 +240,9 @@ footer {
 
 
 .three-column-layout {
-    grid-template-columns: 230px minmax(0, 1fr) 200px;
-    gap: 20px;
+    grid-template-columns: 270px minmax(0, 1fr) 240px;
+    gap: 24px;
 }
-
 .three-column-layout .sidebar {
     position: sticky;
     top: 20px;

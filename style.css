@@ -316,3 +316,40 @@ footer {
 .slideshow .slide-icon {
     font-size: 2.5rem;
 }
+
+/* Three-column layout */
+
+.page-layout.three-column-layout {
+    display: grid;
+    grid-template-columns: 270px minmax(0, 1fr) 240px;
+    gap: 24px;
+}
+
+.three-column-layout .main-content {
+    min-width: 0;
+}
+
+.three-column-layout .on-this-page {
+    grid-column: 3;
+    align-self: start;
+}
+
+@media (max-width: 1000px) {
+    .page-layout.three-column-layout {
+        grid-template-columns: 200px minmax(0, 1fr);
+    }
+
+    .three-column-layout .on-this-page {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 700px) {
+    .page-layout.three-column-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .three-column-layout .on-this-page {
+        grid-column: 1;
+    }
+}

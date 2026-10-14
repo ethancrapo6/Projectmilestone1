@@ -26,8 +26,8 @@
                 <aside class="sidebar">
                     <h2>Table of Contents</h2>
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#key-terms">Key Terms</a></li>
+                        <li><a href="index.html#understanding-web-servers">About</a></li>
+                        <li><a href="index.html#key-terms">Key Terms</a></li>
                     </ul>
                     
                     <h3>Topics</h3>
@@ -127,7 +127,7 @@
                     </ul>
                 </section>
 
-                <section class="content-card">
+                <section class="content-card" id="visiting-website">
                     <h2>What happens when you visit a website?</h2>
                 <ol>
                     <li><strong>Entering the URL:</strong>The browser examines and breaks down the URL into parts such as the protocol, domain name and path so it knows what resource is being requested.</li>
@@ -140,19 +140,65 @@
                     <li><strong>Browser Renders the Webpage:</strong>The browser interprets the resources and displays the finished webpage to the user.</li>
                 </ol>   
                 </section>
+
+                <section class="content-card" id="http-https">
+                    <h2>HTTP and HTTPS</h2>
+
+        <div class="slideshow">
+
+            <input type="radio" name="http-slides" id="slide1" checked>
+            <input type="radio" name="http-slides" id="slide2">
+            <input type="radio" name="http-slides" id="slide3">
+
+            <div class="slide slide-one">
+                <div class="slide-icon">🌐</div>
+                <h3>HTTP</h3>
+                <h4>Hypertext Transfer Protocol</h4>
+                <p>HTTP outlines how users communicate with websites through their browsers. In essence, when you go to a website your browser makes an HTTP Request to the website that contains all of the information it needs to get what you are looking for. The Website then takes this information and creates an HTTP Response that is returned to the user’s browser. The only problem with HTTP is that the data is passed over the internet as plain text. Therefore, anyone who has access to this data can see it.</p>
+                
+                <div class="slide-controls">
+                    <span></span>
+                    <label for="slide2">Next ❯</label>
+                </div>
             </div>
-            <!--On this Page Sidebar-->
-            <aside class="sidebar on-this-page">
-                    <h2>On this Page</h2>
-                        <ul>
-                           <li><a href="basics.html#what-is">What is a Web Server?</a></li> 
-                           <li><a href="basics.html#role">Role of a Web Server</a></li>
-                           <li><a href="basics.html#client-server-communication">Client-Server communication</a></li>
-                           <li><a href="basics.html#visiting-website">What happens when you visit a website?</a></li>
-                           <li><a href="basics.html#http-https">HTTP and HTTPS</a></li>
-                           <li><a href="basics.html#static-dynamic">Static vs Dynamic Content</a></li>
-                        </ul>
-                </aside>
+
+            <div class="slide slide-two">
+                <div class="slide-icon">🔒</div>
+                <h3>HTTPS</h3>
+                <h4>Hypertext Transfer Protocol Secure</h4>
+                <p>HTTPS is the safe version of HTTP. To make sure the data exchanged between the user’s browser and the Web Server is protected by SSL/TLS (Secure Sockets Layer/Transport Layer Security), which encrypts this data.</p>
+                
+                <div class="slide-controls">
+                    <label for="slide1">❮ Previous</label>
+                    <label for="slide3">Next ❯</label>
+                </div>
+            </div>
+
+            <div class="slide slide-three">
+                <div class="slide-icon">🛡️</div>
+                <h3>HTTP vs. HTTPS</h3>
+                <h4>What's the Difference?</h4>
+                <p>One of the most important ways HTTPS keeps its users’ data safe is through encryption. So, if someone listens in on what you are doing, they will be unable to read what you have entered. Another way HTTPS protects its users is by using SSL/TLS Certificates to verify a user's identity, thereby creating a trusted relationship between the User and the Web Server.</p>
+
+                <div class="slide-controls">
+                    <label for="slide2">❮ Previous</label>
+                    <span></span>
+        </div>
+        </section>
+        </div>
+        </div>
+         <!--On this Page Sidebar-->
+        <aside class="sidebar on-this-page">
+            <h2>On this Page</h2>
+                <ul>
+                    <li><a href="basics.html#what-is">What is a Web Server?</a></li> 
+                    <li><a href="basics.html#role">Role of a Web Server</a></li>
+                    <li><a href="basics.html#client-server-communication">Client-Server communication</a></li>
+                    <li><a href="basics.html#visiting-website">What happens when you visit a website?</a></li>
+                    <li><a href="basics.html#http-https">HTTP and HTTPS</a></li>
+                    <li><a href="basics.html#static-dynamic">Static vs Dynamic Content</a></li>
+                 </ul>
+            </aside>
         </div>
 </main>
 </body>

@@ -353,3 +353,49 @@ footer {
         grid-column: 1;
     }
 }
+
+/* Static vs Dynamic Content Comparison */
+
+.content-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.comparison-column {
+    border-top: 4px solid #dca48f;
+    padding: 15px;
+    background-color: #e8edf2;
+    border-radius: 4px;
+}
+
+.comparison-column h3 {
+    text-align: center;
+    color: var(--text);
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.comparison-column p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.comparison-flow {
+    margin-top: 25px;
+    padding: 12px;
+    background-color: var(--cyan-light);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--text);
+}
+
+/* Stack the columns on smaller screens */
+@media (max-width: 700px) {
+    .content-comparison {
+        grid-template-columns: 1fr;
+    }
+}

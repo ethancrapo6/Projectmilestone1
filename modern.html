@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About</title>
+        <title>Modern Web Servers</title>
         <link rel="stylesheet" href="style.css"> 
     </head>
     <body>
@@ -21,10 +21,46 @@
                 <a href="modern.html">Modern Web Servers</a>
                 <a href="references.html">References</a>
             </nav>
-
-            <section class="content-card">
-                <p>blah blah blah</p>
+        
+            <!-- table of contents -->
+        <div class="page-layout three-column-layout">
+                <aside class="sidebar">
+                    <h2>Table of Contents</h2>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#key-terms">Key Terms</a></li>
+                    </ul>
+                    
+                    <h3>Topics</h3>
+                    <details>
+                        <summary> Understanding Web Servers</summary>
+                        <ul>
+                           <li><a href="basics.html#what-is">What is a Web Server?</a></li> 
+                           <li><a href="basics.html#role">Role of a Web Server</a></li>
+                           <li><a href="basics.html#client-server-communication">Client-Server communication</a></li>
+                           <li><a href="basics.html#visiting-website">What happens when you visit a website?</a></li>
+                           <li><a href="basics.html#http-https">HTTP and HTTPS</a></li>
+                           <li><a href="basics.html#static-dynamic">Static vs Dynamic Content</a></li>
+                        </ul>
+                    </details>
+            <section class="content-card" id="appache">
+                <h2>Apache HTTP Server</h2>
+                <ul>
+                    <li>Apache was started in 1995 by a team of web servers administrators who were dissatisfied with how slow progress had been made on NCSA HTTPd. The team decided to start combining their own bug fixes and enhancements that they had developed to make NCSA HTTPd better. They based their new server (Apache) off the code base from NCSA HTTPd 1.3. </li>
+                    <li>In April of 1995, the Apache Group produced their first official release of Apache. In less than a year, Apache had reached over one million sites. According to the results of the 1996 Netcraft Web Server Survey, Apache became the leading web server in the world. </li>
+                    <li>Because it was written to be free and open-source, Apache could be extended, modified and enhanced by users all over the world. As an example, because Apache is modular, users can add other modules to their server to extend functionality. Because Apache is also open-sourced, many people have contributed to developing Apache and creating bug fixes.</li>
+                </ul>
             </section>
+
+                <!-- On This Page Sidebar -->
+        <aside class="sidebar on-this-page">
+            <h2>On This Page</h2>
+            <ul>
+                <li><a href=
+            </ul>
+        </aside>
+        </div>
+        
         </main>
     </body>
 </html>

@@ -30,9 +30,7 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#key-terms">Key Terms</a></li>
                     </ul>
-                </aside>
-                </div>
-                
+
                     <h3>Topics</h3>
                     <details>
                         <summary> Understanding Web Servers</summary>
@@ -45,7 +43,61 @@
                            <li><a href="basics.html#static-dynamic">Static vs Dynamic Content</a></li>
                         </ul>
                     </details>
-            <section class="content-card" id="appache">
+
+                    <details>
+                        <summary>History and Evolution of Web Servers</summary>
+                        <ul>
+                            <li><a href="evolution.html#birth">The Birth of Web Servers</a></li>
+                            <li><a href="evolution.html#early-development">Early Development</a></li>
+                            <li><a href="evolution.html#growth">Growth of the World Wide Web</a></li>
+                            <li><a href="evolution.html#evolution-http">Evolution of HTTP</a></li>
+                        </ul>
+                    </details>
+
+                    <details>
+                        <summary>Major Web Server Technologies</summary>
+                        <ul>
+                            <li><a href="modern.html#apache">Apache HTTP Server</a></li>
+                            <li><a href="modern.html#iis">Microsoft IIS</a></li>
+                            <li><a href="modern.html#nginx">Nginx</a></li>
+                            <li><a href="modern.html#comparison">Apache vs Nginx vs IIS</a></li>
+                        </ul>
+                    </details>
+
+                    <details>
+                        <summary>Modern Web Servers</summary>
+                        <ul>
+                            <li><a href="modern.html#traffic">Handling Modern Web Traffic</a></li>
+                            <li><a href="modern.html#proxy">Reverse Proxy Servers</a></li>
+                            <li><a href="modern.html#balancing">Load Balancing</a></li>
+                            <li><a href="modern.html#caching">Caching &Performance</a></li>
+                            <li><a href="modern.html#hosting">Virtual Hosting</a></li>
+                            <li><a href="modern.html#cloud">Web Servers & Cloud Computing</a></li>
+                            <li><a href="modern.html#cdn">CDNs & Web Servers</a></li>
+                        </ul>
+                    </details>
+
+                    <details>
+                        <summary>Security</summary>
+                        <ul>
+                            <li><a href="modern.html#security">Web Server Security</a></li>
+                            <li><a href="modern.html#threats">Threats Against Web Servers</a></li>
+                        </ul>
+                    </details>
+
+                    <details>
+                        <summary>Future of Web Servers</summary>
+                        <ul>
+                            <li><a href="modern.html#web-servers-today">Web Servers Today</a></li>
+                            <li><a href="modern.html#future">Future of Web Servers</a></li>
+                            <li><a href="modern.html#real-world-arch">Real-World Modern Web Architecture</a></li>
+                        </ul>
+                    </details>
+                </aside>
+        </div>
+<!-- start of section content -->
+        <div class="main-content"></div>
+            <section class="content-card" id="apache">
                 <h2>Apache HTTP Server</h2>
                 <ul>
                     <li>Apache was started in 1995 by a team of web servers administrators who were dissatisfied with how slow progress had been made on NCSA HTTPd. The team decided to start combining their own bug fixes and enhancements that they had developed to make NCSA HTTPd better. They based their new server (Apache) off the code base from NCSA HTTPd 1.3. </li>
@@ -54,15 +106,50 @@
                 </ul>
             </section>
 
-                <!-- On This Page Sidebar -->
+            <section class="content-card" id="iis">
+                <h2>Microsoft IIS</h2>
+                <p>Microsoft entered the developing web server marketplace by introducing Internet Information Services (IIS), in 1996. The primary function of IIS was to provide organizations that used Microsoft's server operating system (Windows NT Server) a method to develop and deploy websites and corporate intranet portals.</p>
+                <p>The biggest advantage of IIS was its native integration into Windows NT Server. One of the key design goals of IIS was ease of installation, configuration, and administration. This was achieved via graphical user interfaces. IIS also had support for some early Internet-based security standards, including Secure Sockets Layer (SSL). In addition to supporting these security standards, IIS could also utilize many of the existing Microsoft software and database products to create dynamic web applications.</p>
+                <p>IIS rapidly grew into one of the leading competitors in the World Wide Web server market. The rapid growth of IIS was largely due to adoption rates from companies that already utilized Microsoft software and/or services. Organizations began to transition to utilizing IIS for both their publicly accessible websites and internal company networks. Since it's introduction, IIS has evolved at a pace equal to that of Windows Server. Today, IIS is still a component of the Windows Server product line. </p>
+            </section>
+
+            <section class="content-card" id="nginx">
+                <h2>Nginx</h2>
+                <p>The first version of NGINX (engine-x) was developed in the early 2000s by software developer Igor Sysoev. Igor started building NGINX as a solution to the "C10K problem," a term that describes how difficult it was for web servers to handle thousands of simultaneous connections. NGINX was then released as free open-source software in October of 2004.</p>
+                <p>Traditional server models were typically built with a one-to-one relationship between a single process/thread and a single connection. In contrast, NGINX is based on an asynchronous, event-driven model, which enables NGINX worker processes to concurrently manage multiple connections with little additional resource utilization. Therefore, NGINX is best suited for websites that are receiving high volumes of traffic.</p>
+                <p>Although NGINX can deliver website content, NGINX has the ability to act as a reverse proxy, content cache, and load balancer. These features enable NGINX to accept incoming traffic and direct the request across multiple servers, thus enabling greater performance, scalability, and reliability of modern web-based applications</p>
+            </section>
+
+            <section class="content-card" id="comparison">
+                <h2>Apache vs Nginx vs IIS</h2>
+            
+            </section>
+        </div>
+
+         
+                    <!-- On This Page Sidebar -->
         <aside class="sidebar on-this-page">
             <h2>On This Page</h2>
             <ul>
-                <li><a href=
+                <li><a href="#apache">Apache HTTP Server</a></li>
+                <li><a href="#iis">Microsoft IIS</a></li>
+                <li><a href="#nginx">Nginx</a></li>
+                <li><a href="#comparison">Apache vs Nginx vs IIS</a></li>
+                <li><a href="#traffic">Handling Modern Web Traffic</a></li>
+                <li><a href="#proxy">Reverse Proxy Servers</a></li>
+                <li><a href="#balancing">Load Balancing</a></li>
+                <li><a href="#caching">Caching &amp; Performance</a></li>
+                <li><a href="#hosting">Virtual Hosting</a></li>
+                <li><a href="#cloud">Web Servers &amp; Cloud Computing</a></li>
+                <li><a href="#cdn">CDNs &amp; Web Servers</a></li>
+                <li><a href="#security">Web Server Security</a></li>
+                <li><a href="#threats">Threats Against Web Servers</a></li>
+                <li><a href="#web-servers-today">Web Servers Today</a></li>
+                <li><a href="#future">Future of Web Servers</a></li>
+                <li><a href="#real-world-arch">Real-World Modern Web Architecture</a></li>
             </ul>
         </aside>
         </div>
-        
         </main>
     </body>
 </html>

@@ -99,11 +99,9 @@
         <div class="main-content">
             <section class="content-card" id="apache">
                 <h2>Apache HTTP Server</h2>
-                <ul>
-                    <li>Apache was started in 1995 by a team of web servers administrators who were dissatisfied with how slow progress had been made on NCSA HTTPd. The team decided to start combining their own bug fixes and enhancements that they had developed to make NCSA HTTPd better. They based their new server (Apache) off the code base from NCSA HTTPd 1.3. </li>
-                    <li>In April of 1995, the Apache Group produced their first official release of Apache. In less than a year, Apache had reached over one million sites. According to the results of the 1996 Netcraft Web Server Survey, Apache became the leading web server in the world. </li>
-                    <li>Because it was written to be free and open-source, Apache could be extended, modified and enhanced by users all over the world. As an example, because Apache is modular, users can add other modules to their server to extend functionality. Because Apache is also open-sourced, many people have contributed to developing Apache and creating bug fixes.</li>
-                </ul>
+                <p>Apache was started in 1995 by a team of web servers administrators who were dissatisfied with how slow progress had been made on NCSA HTTPd. The team decided to start combining their own bug fixes and enhancements that they had developed to make NCSA HTTPd better. They based their new server (Apache) off the code base from NCSA HTTPd 1.3. </p>
+                <p>In April of 1995, the Apache Group produced their first official release of Apache. In less than a year, Apache had reached over one million sites. According to the results of the 1996 Netcraft Web Server Survey, Apache became the leading web server in the world. </p>
+                <p>Because it was written to be free and open-source, Apache could be extended, modified and enhanced by users all over the world. As an example, because Apache is modular, users can add other modules to their server to extend functionality. Because Apache is also open-sourced, many people have contributed to developing Apache and creating bug fixes.</p> 
             </section>
 
             <section class="content-card" id="iis">
@@ -119,10 +117,64 @@
                 <p>Traditional server models were typically built with a one-to-one relationship between a single process/thread and a single connection. In contrast, NGINX is based on an asynchronous, event-driven model, which enables NGINX worker processes to concurrently manage multiple connections with little additional resource utilization. Therefore, NGINX is best suited for websites that are receiving high volumes of traffic.</p>
                 <p>Although NGINX can deliver website content, NGINX has the ability to act as a reverse proxy, content cache, and load balancer. These features enable NGINX to accept incoming traffic and direct the request across multiple servers, thus enabling greater performance, scalability, and reliability of modern web-based applications</p>
             </section>
-
+<!-- table comparison of Apache, Nginx, and IIS -->
             <section class="content-card" id="comparison">
                 <h2>Apache vs Nginx vs IIS</h2>
-            
+                
+                <table border="1" cellpadding="10" cellspacing="0">
+                    <tr bgcolor="lightblue">
+                        <th><strong>Feature</strong></th>
+                        <th><strong>Apache</strong></th>
+                        <th><strong>Nginx</strong></th>
+                        <th><strong>IIS</strong></th>
+                    </tr>
+                    <tr>
+                        <td><strong>First Released</strong></td>
+                        <td>1995</td>
+                        <td>2004</td>
+                        <td>1996</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Platform</strong></td>
+                        <td>Cross-platform</td>
+                        <td>Cross-platform</td>
+                        <td>Primarily Windows</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Development</strong></td>
+                        <td>Free and open-source</td>
+                        <td>Open-source core</td>
+                        <td>Microsoft</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Architecture</strong></td>
+                        <td>Process/thread-based with multiple processing models</td>
+                        <td>Asynchronous, event-driven</td>
+                        <td>Windows-integrated architecture</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Major Strength</strong></td>
+                        <td>Flexibility and extensive module support</td>
+                        <td>Efficient handling of many concurrent connections</td>
+                        <td>Integration with Windows and Microsoft technologies</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Other Uses/Features</strong></td>
+                        <td>Modules, virtual hosting, authentication</td>
+                        <td>Reverse proxy, caching, load balancing</td>
+                        <td>Windows authentication, ASP.NET integration, management tools</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Common Use</strong></td>
+                        <td>General-purpose web hosting</td>
+                        <td>High-traffic sites, proxying and load balancing</td>
+                        <td>Windows-based enterprise environments</td>
+                    </tr>
+                </table>
             </section>
         
         </div>

@@ -176,11 +176,150 @@
                     </tr>
                 </table>
             </section>
+
+            <section class="content-card" id="traffic">
+                <h2>Handling Modern Web Traffic</h2>
+                <p>Modern websites may receive an influx of thousands or even millions of user requests for access to content from various geographic areas using many different devices. In addition to requiring each request to use computer resources, increasing the number of users requesting information simultaneously will eventually exceed the capacity of a single web server. Therefore, modern websites must be able to process large amounts of traffic with fast page-load response times 
+and very high availability rates</p>
+                <p>As opposed to having all of its workload processed by a single web server, modern websites can distribute their workload among multiple servers. If there is an increased amount of traffic, additional servers can be utilized to provide additional computing resources to the original set of servers. This provides redundancy as well; if one server fails, the remaining servers continue to serve traffic.</p>
+                <p>There are several types of technology that assist in distributing and managing the flow of traffic. Load Balancers direct incoming requests to a group of servers. Reverse Proxies act as a "middle man" receiving incoming requests and then forward those requests to another server. Caching holds copies of frequently requested content and delivers it immediately rather than processing the same request again. A Content Delivery Network (CDN), stores this cache on geographically separate servers which are located near end-users.</p>
+            </section>
+
+            <section class="content-card" id="proxy">
+                <h2>Reverse Proxy Servers</h2>
+                <h3>What is a Reverse Proxy?</h3>
+                <p>A reverse proxy server is positioned in front of one or many web servers for clients. In this way, instead of a client going straight to the web server with a request, they send their request to the reverse proxy which directs that request to another suitable server(s), receives that server's response and returns it to the client.</p>
+                <h3>Why use a Reverse Proxy?</h3>
+                <p>As such, by acting as an intermediary between clients and web servers, a reverse proxy can perform additional tasks before a request reaches the web server. Examples include load balancing; caching of frequently requested pages; handling SSL/https encryption; etc. These capabilities can help make a website more scalable, secure, and efficient.</p>
+            </section>
+
+            <section class="content-card" id="balancing">
+                <h2>Load Balancing</h2>
+                <h3>What is Load Balancing?</h3>
+                <p>Load balancing is a technique for taking incoming network traffic and routing it out to a pool of servers. The main concept behind load balancing is that instead of all requests being routed through one server, a load balancer will take incoming requests and distribute them among a pool of available servers. By distributing requests among multiple servers, a load balancer helps prevent one server from becoming overloaded while other servers remain underutilized.</p>
+                <h3>How Load Balancing Works</h3>
+                <p>There are many ways a load balancer can decide how to route each new request. For example, Round Robin uses an algorithm that simply assigns each request to a server in sequence. Another way is called Least Connections. With this method, the request is sent to the server with the fewest active connections at the time. Load balancers can also check on the status of each server before directing traffic to it by using what is known as a health check.</p>
+                <h3>Why is Load Balancing Important?</h3>
+                <p>The result of load balancing is improved performance, improved scalability, and increased availability. For instance, if you are running a website, when there is a surge in visitors to your website, you can add additional servers to assist in processing the extra workload. Additionally, since the load balancer directs traffic to only those servers that are still working properly (since it does periodic health checks), even if one or more of the servers fail, the rest of your website will continue to operate normally.</p>
+            </section>
         
-        </div>
+            <section class="content-card" id="caching">
+                <h2>Caching & Performance</h2>
+                <h3>What is Caching?</h3>
+                <p>Caching involves storing temporary copies of web content that are commonly asked for so that you don't have to wait as long for your next visit. The goal of caching is to allow the web server to avoid doing the same job over and over on each separate request for the same piece of information.</p>
+                <h3>How Does Caching Work?</h3>
+                <p>Each time you ask for something (content), the system will check if there is a current version of what you've requested within its cache. If there is an up-to-date copy in cache then the system will experience a "cache hit," and this content will be provided to you. If there isn't a current version of what you're asking for, or if it has expired, then the system experiences a "cache miss." When this happens, the content must be retrieved from the original server.</p>
+                <h3>Why is Caching Important?</h3>
+                <p>Using caching can save web servers processing power, cut down on internet bandwidth used, and speed up how fast pages load. These three benefits become even greater for sites with high levels of traffic since they won't always need to generate/retrieve data each time someone wants to access a resource.</p>
+            </section>
+            
+            <section class="content-card" id="hosting">
+                <h2>Virtual Hosting</h2>
+                <h3>What is Virtual Hosting?</h3>
+                <p>Virtual Hosting enables a single web server to serve multiple sites. With virtual hosting, there does not need to be a new physical server for every site. A single server will accept requests for various domain names and decide which site is being requested by each user.</p>
+                <h3>How Does it Work?</h3>
+                <p>Each time a browser makes an HTTP request, the request identifies the domain name of the website the user wants to access. The Web Server then determines which site’s configuration and files are to be used based upon the identified website. This way, multiple websites that have differing domain names can run off the same server but to the end-user appear as separate websites.</p>
+                <h3>Why is Virtual Hosting Important?</h3>
+                <p>Virtual hosting helps both organizations and hosting service providers utilize their server resources in an efficient manner, since all of these websites can run off either a physical or virtual server. It also reduces hardware and hosting cost associated with running so many servers.</p>
+            </section>
+            
+            <section class="content-card" id="cloud">
+                <h2>Web Servers &amp; Cloud Computing</h2>
+
+                <h3>What is a Cloud Web Server?</h3>
+                <p>Traditionally, organizations could host their websites on physical servers that they owned or rented. With cloud computing, organizations can instead use computing resources provided over the Internet. Cloud web servers run on virtual machines in large data centers operated by cloud providers.</p>
+
+                <h3>How Does Cloud Hosting Work?</h3>
+                <p>Rather than purchasing and maintaining all of their own physical hardware, organizations can obtain resources such as processing power, memory, storage, and networking from a cloud provider. Web server software such as Apache, NGINX, or IIS can then run on these cloud resources just as it would on a traditional server.</p>
+
+                <h3>Why is the Cloud Important for Web Servers?</h3>
+                <p>Cloud computing makes it easier for organizations to scale their web infrastructure when demand changes. Additional resources can be added when traffic increases and reduced when demand decreases. Cloud platforms also provide services such as load balancing, monitoring, storage, and geographic distribution, allowing organizations to build web systems without maintaining all of the underlying physical infrastructure.</p>
+            </section>
+
+            <!-- CDNs & Web Servers -->
+            <section class="content-card" id="cdn">
+                <h2>CDNs &amp; Web Servers</h2>
+
+                <h3>What is a CDN?</h3>
+                <p>A Content Delivery Network (CDN) is a network of servers distributed around the world that helps deliver web content to users. Instead of every request going directly to a website's original web server, a CDN can store cached copies of content on servers closer to users.</p>
+
+                <h3>How Does a CDN Work?</h3>
+                <p>When a user requests content from a website using a CDN, their browser may be directed to a nearby CDN server, also called an edge server. If the requested content is already cached, the edge server delivers it to the user. Otherwise, the CDN retrieves the content from the website's origin server and can cache it for future requests.</p>
+
+                <h3>Why are CDNs Important?</h3>
+                <p>CDNs improve website performance by reducing the distance that content must travel to reach users. They can also reduce the amount of traffic and bandwidth required from the original web server. By distributing requests across multiple servers in different locations, CDNs help websites handle larger amounts of traffic.</p>
+            </section>
+
+            <!-- Web Server Security -->
+            <section class="content-card" id="security">
+                <h2>Web Server Security</h2>
+
+                <h3>Why Web Server Security Matters</h3>
+                <p>Web servers are often accessible through the public Internet and may store or process sensitive information. This makes them attractive targets for hackers. Administrators must protect servers from malicious attacks while still allowing authorized users to access websites. A successful attack can expose sensitive data, change website content, or make a website unavailable.</p>
+
+                <h3>How Web Servers Are Protected</h3>
+                <p>Web servers use several layers of security. HTTPS uses TLS encryption to protect information transmitted between clients and servers. Firewalls help block unwanted or malicious network traffic. Authentication and access controls restrict who can access administrative areas, while regular software updates help fix known security vulnerabilities.</p>
+
+                <h3>Secure Server Configuration</h3>
+                <p>Administrators can improve security by disabling unnecessary services, limiting user permissions, and configuring security settings correctly. Web servers also generate logs that record requests and activities. Monitoring these logs for unusual patterns can help identify possible security threats. Using multiple security measures reduces the likelihood of a single weakness compromising the entire system.</p>
+            </section>
+
+            <!-- Threats Against Web Servers -->
+            <section class="content-card" id="threats">
+                <h2>Threats Against Web Servers</h2>
+
+                <h3>DDoS Attacks</h3>
+                <p>A Distributed Denial of Service (DDoS) attack attempts to overwhelm a web server with a massive amount of traffic. When the server and its supporting infrastructure run out of available resources, users may experience slow loading times or be unable to access the website.</p>
+
+                <h3>Unauthorized Access</h3>
+                <p>Attackers may attempt to access web servers without permission by using stolen login credentials, weak passwords, insufficient permissions, or security vulnerabilities. Successful unauthorized access may allow attackers to view sensitive information, modify website files, or gain control over parts of the server.</p>
+
+                <h3>Web Application Attacks</h3>
+                <p>Attackers can exploit weaknesses in websites and web applications to gain access to data or perform unwanted actions. Two examples are SQL injection and Cross-Site Scripting (XSS). These attacks can compromise website users and allow attackers to manipulate information.</p>
+
+                <h3>Malware &amp; Malicious Files</h3>
+                <p>After compromising a web server, an attacker may install malicious software or files. This malware can be used to steal information, redirect visitors to harmful websites, distribute malicious content, or perform other unauthorized activities.</p>
+            </section>
+
+            <!-- Web Servers Today -->
+            <section class="content-card" id="web-servers-today">
+                <h2>Web Servers Today</h2>
+
+                <p>Early websites could often operate using a single web server that stored and delivered all of the website's files. Modern websites are much more complex, and web servers now operate as one component of a larger infrastructure that may include load balancers, reverse proxies, database servers, cache servers, Content Delivery Networks (CDNs), and cloud services.</p>
+
+                <p>Modern web infrastructure is designed to handle changing levels of traffic. Instead of directing every request to one server, organizations can distribute requests across multiple servers and add or remove computing resources when needed. This also improves reliability because traffic can be redirected to functioning servers if one server fails.</p>
+
+                <p>Although web infrastructure has become much more complex, the fundamental purpose of a web server remains the same: accepting requests from clients and returning the requested information, content, or service.</p>
+            </section>
+
+            <!-- Future of Web Servers -->
+            <section class="content-card" id="future">
+                <h2>Future of Web Servers</h2>
+
+                <h3>Cloud-Based Infrastructure</h3>
+                <p>Web servers are continuing to move away from relying on a single physical machine toward cloud-based solutions. Cloud computing allows organizations to allocate computing resources based on changing web traffic. Technologies such as containers and serverless computing can also reduce the need to manage physical servers directly.</p>
+
+                <h3>Edge Computing &amp; CDNs</h3>
+                <p>Web infrastructure is becoming more distributed through edge computing and Content Delivery Networks. Instead of sending every request to a central server, content and processing can be placed closer to users. This helps reduce delays and improve access to websites and online services.</p>
+
+                <h3>Automation &amp; Security</h3>
+                <p>As web systems continue to grow in size and complexity, automation will become increasingly important for server performance, problem detection, and resource allocation. Security will also remain a major concern as organizations work to defend against DDoS attacks, unauthorized access, malware, and web application attacks.</p>
+            </section>
+
+            <!-- Real-World Modern Web Architecture -->
+            <section class="content-card" id="real-world-arch">
+                <h2>Real-World Modern Web Architecture</h2>
+
+                <h3>How Modern Web Architecture Works</h3>
+                <p>When a user visits a modern website, their request may pass through several systems before reaching the web server. A Content Delivery Network (CDN) may already have a cached copy of the requested content on an edge server near the user. If the content is not cached, the request can be forwarded through a reverse proxy or load balancer to one of several web servers.</p>
+
+                <p>After receiving the request, the web server may communicate with an application server, cache, or database to generate the requested page. These systems work together to help modern websites support thousands of users while improving performance, scalability, reliability, and security.</p>
+            </section>
+                
+            </div>
 
          
-                    <!-- On This Page Sidebar -->
+        <!-- On This Page Sidebar -->
         <aside class="sidebar on-this-page">
             <h2>On This Page</h2>
             <ul>

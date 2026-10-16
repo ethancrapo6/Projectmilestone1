@@ -5,35 +5,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Key Concepts | Evolution of Web Servers</title>
+    <title>Key Concepts | The Evolution of Web Servers</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<main class="page-shell">
+
     <!-- Website header -->
-    <header>
+    <header class="site-header">
         <h1>The Evolution of Web Servers</h1>
         <p>Understanding the Technology Behind the World Wide Web</p>
     </header>
 
     <!-- Main navigation -->
-    <nav>
+    <nav class="top-nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="keyconcepts.html">Key Concepts</a>
+        <a href="concepts.html">Key Concepts</a>
         <a href="basics.html">Web Server Basics</a>
         <a href="evolution.html">Evolution</a>
         <a href="modern.html">Modern Web Servers</a>
         <a href="references.html">References</a>
     </nav>
 
-    <!-- Three-column page layout -->
-    <div class="container">
+    <!-- Three-column layout -->
+    <div class="page-layout three-column-layout">
 
         <!-- Left sidebar -->
         <aside class="sidebar">
-            <h3>Table of Contents</h3>
+            <h2>Table of Contents</h2>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="basics.html">Web Server Basics</a></li>
@@ -45,8 +47,8 @@
             </ul>
         </aside>
 
-        <!-- Main page content -->
-        <main class="main-content">
+        <!-- Main content -->
+        <div class="main-content">
 
             <section class="content-card" id="introduction">
                 <h2>Key Concepts of Web Servers</h2>
@@ -55,8 +57,8 @@
                     to deliver websites and applications across the
                     internet. Understanding these concepts helps explain
                     how browsers communicate with servers, how websites
-                    handle large amounts of traffic, and how modern web
-                    services remain fast, secure, and reliable.
+                    handle large amounts of traffic, and how modern
+                    web services remain fast, secure, and reliable.
                 </p>
                 <p>
                     This page introduces seven important concepts
@@ -67,72 +69,77 @@
             <section class="content-card" id="web-server">
                 <h2>1. Web Server</h2>
                 <p>
-                    A web server is a computer system or software that
-                    receives requests from clients and delivers web
-                    content in response. When a user enters a website
-                    address into a browser, the browser sends a request
-                    to a web server. The server processes the request
-                    and returns the requested content.
+                    A web server is a computer system or software
+                    that receives requests from clients and delivers
+                    web content in response. When a user enters a
+                    website address into a browser, the browser sends
+                    a request to a web server. The server processes
+                    the request and returns the requested content.
                 </p>
                 <p>
                     Web servers commonly deliver HTML documents,
-                    CSS files, JavaScript files, and images. Popular
-                    web server software includes Apache HTTP Server,
-                    Nginx, and Microsoft IIS.
+                    CSS files, JavaScript files, and images.
+                    Popular web server software includes Apache
+                    HTTP Server, Nginx, and Microsoft IIS.
                 </p>
             </section>
 
             <section class="content-card" id="http">
                 <h2>2. HTTP and HTTPS</h2>
                 <p>
-                    Hypertext Transfer Protocol (HTTP) is the protocol
-                    used for communication between web browsers and
-                    web servers. It defines how clients request web
-                    resources and how servers respond to those requests.
+                    Hypertext Transfer Protocol (HTTP) is the
+                    protocol used for communication between web
+                    browsers and web servers. It defines how
+                    clients request web resources and how servers
+                    respond to those requests.
                 </p>
                 <p>
                     HTTPS is the secure version of HTTP. It uses
                     encryption through TLS to protect information
                     exchanged between the browser and server.
-                    HTTPS is especially important for websites that
-                    handle passwords, personal information, and
-                    financial transactions.
+                    HTTPS is especially important for websites
+                    that handle passwords, personal information,
+                    and financial transactions.
                 </p>
             </section>
 
             <section class="content-card" id="client-server">
                 <h2>3. Client-Server Architecture</h2>
                 <p>
-                    Client-server architecture is a computing model
-                    where clients request services or resources from
-                    servers. In web development, the client is usually
-                    a web browser, while the server stores or generates
-                    the resources requested by the client.
+                    Client-server architecture is a computing
+                    model where clients request services or
+                    resources from servers. In web development,
+                    the client is usually a web browser, while
+                    the server stores or generates the resources
+                    requested by the client.
                 </p>
                 <p>
                     For example, when someone visits a website,
                     the browser sends an HTTP request. The server
-                    responds with the necessary files or data so
-                    the browser can display the page.
+                    responds with the necessary files or data
+                    so the browser can display the page.
                 </p>
             </section>
 
             <section class="content-card" id="static-dynamic">
                 <h2>4. Static and Dynamic Content</h2>
                 <p>
-                    Static content consists of files that are delivered
-                    without being changed for each request. Examples
-                    include HTML files, images, and CSS stylesheets.
+                    Static content consists of files that are
+                    delivered without being changed for each
+                    request. Examples include HTML files,
+                    images, and CSS stylesheets.
                 </p>
                 <p>
-                    Dynamic content is generated or customized based
-                    on information such as user input, account data,
-                    or database records. For example, an online
-                    shopping website may display different products
-                    or recommendations depending on the user.
+                    Dynamic content is generated or customized
+                    based on information such as user input,
+                    account data, or database records.
+                    For example, an online shopping website
+                    may display different products or
+                    recommendations depending on the user.
                 </p>
 
                 <h3>Static vs. Dynamic Content</h3>
+
                 <table border="1" cellpadding="10" cellspacing="0">
                     <tr>
                         <th>Feature</th>
@@ -162,16 +169,17 @@
                 <p>
                     A reverse proxy is a server that sits between
                     clients and one or more backend servers.
-                    Instead of clients communicating directly with
-                    backend servers, their requests first pass
-                    through the reverse proxy.
+                    Instead of clients communicating directly
+                    with backend servers, their requests first
+                    pass through the reverse proxy.
                 </p>
                 <p>
-                    Reverse proxies can improve security, distribute
-                    requests, cache frequently requested content,
-                    and help manage communication between users
-                    and backend systems. Nginx is commonly used
-                    as reverse proxy software.
+                    Reverse proxies can improve security,
+                    distribute requests, cache frequently
+                    requested content, and help manage
+                    communication between users and backend
+                    systems. Nginx is commonly used as
+                    reverse proxy software.
                 </p>
             </section>
 
@@ -180,9 +188,9 @@
                 <p>
                     Load balancing is the process of distributing
                     incoming network requests across multiple
-                    servers. This prevents one server from handling
-                    all incoming traffic while other servers
-                    remain underused.
+                    servers. This prevents one server from
+                    handling all incoming traffic while other
+                    servers remain underused.
                 </p>
                 <p>
                     Load balancing helps websites support more
@@ -229,11 +237,11 @@
                 </p>
             </section>
 
-        </main>
+        </div>
 
         <!-- Right sidebar -->
-        <aside class="right-sidebar">
-            <h3>On This Page</h3>
+        <aside class="sidebar on-this-page">
+            <h2>On This Page</h2>
             <ul>
                 <li><a href="#introduction">Introduction</a></li>
                 <li><a href="#web-server">Web Server</a></li>
@@ -249,16 +257,18 @@
 
     </div>
 
-    <!-- Class project footer -->
-    <footer>
-        <p>
-            This website was created as a class project for
-            IT 3203 Web Development at Kennesaw State University.
-            <a href="https://ksuweb.github.io/IT3203/">
-                IT 3203 Course Website
-            </a>
-        </p>
-    </footer>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>
+        This website was created as a class project for
+        IT 3203 Web Development at Kennesaw State University.
+        <a href="https://ksuweb.github.io/IT3203/">
+            IT 3203 Course Website
+        </a>
+    </p>
+</footer>
 
 </body>
 </html>

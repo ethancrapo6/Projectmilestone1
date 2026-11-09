@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Server Quiz</title>
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body>
+        <main class="page-shell">
+            <header class="site-header">
+                <p class="eyebrow">Web Servers Quiz</p>
+                <h1>Web Servers Quiz</h1>
+            </header>
+
+            <nav class="top-nav" aria-label="Main navigation">
+                <a href="index.html">🏠 Home</a>
+                <a href="about.html">About</a>
+                <a href="keyconcepts.html">Key Concepts</a>
+                <a href="basics.html">Web Server Basics</a>
+                <a href="evolution.html">History &amp; Evolution</a>
+                <a href="modern.html">Modern Web Servers</a>
+                <a href="references.html">References</a>
+                <a href="quiz.html">Quiz</a>
+            </nav>
+            
+            <section class="content-card" id="quiz">
+                <h2>Test Your Knowledge</h2>
+                <p>Welcome to the Web Servers Quiz! Test your understanding of web server concepts and their evolution.</p>
+                <p>This quiz contains 10 questions and has a time limit of 10 minutes. Your score and answers will be displayed after submission.</p>
+
+            <!-- Quiz form -->
+            <form id="quiz-form">
+
+            <!-- Question 1-->
+             <div class="quiz-question">
+                <h3>Question 1</h3>
+                <p>What is the primary function of a web server?</p>
+
+                <label>
+                    <input type="radio" name="q1" value="a">
+                    A. To design website layouts
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="b">
+                    B. To receive requests and deliver web content
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="c">
+                    C. To create internet connections
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="d">
+                    D. To store passwords for web browsers
+                </label>
+            </div>    
+
+            <!-- Question 2-->    
+            <div class="quiz-question">
+                <h3>Question 2</h3>
+                <p>Which protocol is used to securely transfer data between a web browser and a web server?</p>
+
+                <label>
+                    <input type="radio" name="q2" value="a">
+                    A. HTTP
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="b">
+                    B. FTP
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="c">
+                    C. HTTPS
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="d">
+                    D. SMTP
+                </label>
+            </div>
+            
+
+            <!-- Question 3: Multiple Choice -->
+            <div class="quiz-question">
+                <h3>Question 3</h3>
+                <p>Which web server was first released in 1995?</p>
+
+                <label>
+                    <input type="radio" name="q3" value="a">
+                    A. Nginx
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="b">
+                    B. Microsoft IIS
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="c">
+                    C. Apache HTTP Server
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="d">
+                    D. Google Chrome
+                </label>
+            </div>
+
+            <!-- Question 4: Multiple Choice -->
+            <div class="quiz-question">
+                <h3>Question 4</h3>
+                <p>What is the primary purpose of load balancing?</p>
+
+                <label>
+                    <input type="radio" name="q4" value="a">
+                    A. To encrypt website traffic
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="b">
+                    B. To distribute traffic across multiple servers
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="c">
+                    C. To create website designs
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="d">
+                    D. To store browser passwords
+                </label>
+            </div>
+
+            <!-- Question 5: Fill in the Blank -->
+            <div class="quiz-question">
+                <h3>Question 5</h3>
+                <p>
+                    The process of storing temporary copies of frequently
+                    requested web content is called ________.
+                </p>
+
+                <label for="q5">Your Answer:</label>
+                <input type="text" id="q5" name="q5"
+                    placeholder="Enter your answer">
+            </div>
+
+            <!-- Question 6: Fill in the Blank -->
+            <div class="quiz-question">
+                <h3>Question 6</h3>
+                <p>
+                    A ________ proxy sits between clients and web servers
+                    and forwards incoming requests to the appropriate server.
+                </p>
+
+                <label for="q6">Your Answer:</label>
+                <input type="text" id="q6" name="q6"
+                    placeholder="Enter your answer">
+            </div>
+
+            <!-- Question 7: Fill in the Blank -->
+            <div class="quiz-question">
+                <h3>Question 7</h3>
+                <p>
+                    A Content Delivery Network is commonly abbreviated
+                    as ________.
+                </p>
+
+                <label for="q7">Your Answer:</label>
+                <input type="text" id="q7" name="q7"
+                    placeholder="Enter your answer">
+            </div>
+
+            <!-- Question 8: Multi-Selection -->
+            <div class="quiz-question">
+                <h3>Question 8</h3>
+                <p>
+                    Which of the following are common web server
+                    technologies? (Select all that apply.)
+                </p>
+
+                <label>
+                    <input type="checkbox" name="q8" value="a">
+                    A. Apache HTTP Server
+                </label>
+
+                <label>
+                    <input type="checkbox" name="q8" value="b">
+                    B. Microsoft IIS
+                </label>
+
+                <label>
+                    <input type="checkbox" name="q8" value="c">
+                    C. Nginx
+                </label>
+
+                <label>
+                    <input type="checkbox" name="q8" value="d">
+                    D. Microsoft Excel
+                </label>
+            </div>
+
+            <!-- Question 9: Multi-Selection -->
+            <div class="quiz-question">
+                <h3>Question 9</h3>
+                <p>
+                    Which technologies help improve website performance?
+                    (Select all that apply.)
+                </p>
+
+                <label>
+                    <input type="checkbox" name="q9" value="a">
+                    A. Caching
+                </label>
+
+                <label>
+                    <input type="checkbox" name="q9" value="b">
+                    B. Load Balancing
+                </label>
+
+                <label>
+                    <input type="checkbox" name="q9" value="c">
+                    C. Content Delivery Networks
+                </label>
+
+                <label>
+                    <input type="checkbox" name="q9" value="d">
+                    D. Increasing server response delays
+                </label>
+            </div>
+
+            <!-- Question 10: Multi-Selection -->
+            <div class="quiz-question">
+                <h3>Question 10</h3>
+                <p>
+                    Which of the following help protect web servers
+                    against security threats? (Select all that apply.)
+                </p>
+
+                <label>
+                    <input type="checkbox" name="q10" value="a">
+                    A. HTTPS Encryption
+                </label>
+
+                <label>
+                    <input type="checkbox" name="q10" value="b">
+                    B. Firewalls
+                </label>
+
+                <label>
+                    <input type="checkbox" name="q10" value="c">
+                    C. Regular Software Updates
+                </label>
+
+                <label>
+                    <input type="checkbox" name="q10" value="d">
+                    D. Using weak passwords
+                </label>
+            </div>
+        <button type="submit" id="submit-quiz">
+    Submit Quiz
+        </button>
+            </form>
+  
+        </section>
+        
+    
+    </main>
+             <footer>
+                <p>
+                    This website was created as a class project for
+                    IT 3203 Web Development at Kennesaw State University.
+                    <a href="https://ksuweb.github.io/IT3203/">
+                        IT 3203 Course Website
+                    </a>
+                </p>
+            </footer>
+        </body>
+</html>

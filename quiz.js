@@ -23,3 +23,79 @@ const timer = setInterval(function () {
     }
 }, 1000);
 
+
+/* Quiz Grading System */
+
+// Correct answers for all 10 questions
+const correctAnswers = {
+    q1: ["b"],
+    q2: ["c"],
+    q3: ["c"],
+    q4: ["b"],
+    q5: ["caching"],
+    q6: ["reverse"],
+    q7: ["cdn"],
+    q8: ["a", "b", "c"],
+    q9: ["a", "b", "c"],
+    q10: ["a", "b", "c"]
+};
+
+// Listen for quiz submission
+document.getElementById("quiz-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    // Stop the countdown
+    clearInterval(timer);
+
+    let score = 0;
+    let feedback = "";
+
+    // Check each question
+    for (let i = 1; i <= 10; i++) {
+        const question = "q" + i;
+        const correct = correctAnswers[question];
+
+        let selected = [];
+
+        if (i >= 5 && i <= 7) {
+            const answer = document.querySelector(`[name="${question}"]`).value;
+            selected = [answer.trim().toLowerCase()];
+        } else {
+            selected = Array.from(
+                document.querySelectorAll(`[name="${question}"]:checked`)
+            ).map(input => input.value);
+        }
+
+        const isCorrect =
+            selected.length === correct.length &&
+            selected.every(answer => correct.includes(answer));
+
+        if (isCorrect) {
+            score++;
+        }
+
+        feedback += `
+            <p>
+                Question ${i}: ${isCorrect ? "Correct" : "Incorrect"}
+                (Score: ${isCorrect ? 1 : 0}/1)<br>
+                Correct Answer: ${correct.join(", ").toUpperCase()}
+            </p>
+        `;
+    }
+
+    // Display final results
+    const passed = score >= 7;
+
+    document.getElementById("quiz-results").innerHTML = `
+        <h2>${passed ? "Passed!" : "Failed"}</h2>
+        <h3>Final Score: ${score}/10 (${score * 10}%)</h3>
+        <p>Time Taken: ${Math.floor(elapsedTime / 60)} minutes
+        and ${elapsedTime % 60} seconds</p>
+        <h3>Question Results</h3>
+        ${feedback}
+    `;
+
+    // Prevent additional submissions
+    document.getElementById("submit-quiz").disabled = true;
+});
+

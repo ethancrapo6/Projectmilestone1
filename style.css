@@ -377,3 +377,24 @@ footer {
 .comparison-flow {
     overflow-wrap: anywhere;
 }
+
+
+/* About Page Layout Improvements */
+.about-page .page-layout {
+    grid-template-columns: 180px minmax(0, 1fr) 220px;
+    align-items: start;
+}
+
+.about-page .main-content {
+    min-width: 0;
+}
+
+.about-page .sidebar {
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 900px) {
+    .about-page .page-layout {
+        grid-template-columns: 1fr;
+    }
+}

@@ -35,9 +35,9 @@ const correctAnswers = {
     q5: ["caching"],
     q6: ["reverse"],
     q7: ["cdn"],
-    q8: ["a", "b", "c"],
-    q9: ["a", "b", "c"],
-    q10: ["a", "b", "c"]
+    q8: ["Apache HTTP Server", "Microsoft IIS", "Nginx"],
+    q9: ["Caching", "Load Balancing", "Content Delivery Networks"],
+    q10: [" HTTPS Encryption", "Firewalls", "Regular Software Updates"]
 };
 
 // Listen for quiz submission
@@ -75,12 +75,12 @@ document.getElementById("quiz-form").addEventListener("submit", function(event) 
         }
 
         feedback += `
-            <p>
-                Question ${i}: ${isCorrect ? "Correct" : "Incorrect"}
-                (Score: ${isCorrect ? 1 : 0}/1)<br>
-                Correct Answer: ${correct.join(", ").toUpperCase()}
-            </p>
-        `;
+    <p class="${isCorrect ? "correct-answer" : "incorrect-answer"}">
+        Question ${i}: ${isCorrect ? "Correct" : "Incorrect"}
+        (Score: ${isCorrect ? 1 : 0}/1)<br>
+        Correct Answer: ${correct.join(", ").toUpperCase()}
+    </p>
+`;
     }
 
     // Display final results

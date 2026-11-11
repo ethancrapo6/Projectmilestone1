@@ -377,3 +377,28 @@ footer {
 .comparison-flow {
     overflow-wrap: anywhere;
 }
+
+
+/* Quiz Results Styling */
+
+#quiz-results {
+    margin-top: 25px;
+}
+
+#quiz-results .correct-answer {
+    background-color: #e8f5e9;
+    color: #216e39;
+    border-left: 4px solid #28a745;
+    padding: 12px 15px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+#quiz-results .incorrect-answer {
+    background-color: #fdeaea;
+    color: #a12626;
+    border-left: 4px solid #dc3545;
+    padding: 12px 15px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}

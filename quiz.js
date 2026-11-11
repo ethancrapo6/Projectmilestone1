@@ -6,7 +6,7 @@ let timeRemaining = 600;
 let elapsedTime = 0;
 
 // Update the countdown every second
-const timer = setInterval(function () {
+let timer = setInterval(function () {
     timeRemaining--;
     elapsedTime++;
 
@@ -97,5 +97,46 @@ document.getElementById("quiz-form").addEventListener("submit", function(event) 
 
     // Prevent additional submissions
     document.getElementById("submit-quiz").disabled = true;
+    document.getElementById("retake-quiz").hidden = false;
 });
 
+
+// Retake Quiz Functionality
+document.getElementById("retake-quiz").addEventListener("click", function () {
+    // Reset all answers
+    document.getElementById("quiz-form").reset();
+
+    // Clear previous results
+    document.getElementById("quiz-results").innerHTML = "";
+
+    // Enable the submit button again
+    document.getElementById("submit-quiz").disabled = false;
+
+    // Hide the retake button
+    document.getElementById("retake-quiz").hidden = true;
+
+    // Reset the timer
+    timeRemaining = 600;
+    elapsedTime = 0;
+
+    document.getElementById("timer").textContent =
+        "Time Remaining: 10:00";
+});
+
+clearInterval(timer);
+
+timer = setInterval(function () {
+    timeRemaining--;
+    elapsedTime++;
+
+    const minutes = Math.floor(timeRemaining / 60);
+    const seconds = timeRemaining % 60;
+
+    document.getElementById("timer").textContent =
+        `Time Remaining: ${minutes}:${String(seconds).padStart(2, "0")}`;
+
+    if (timeRemaining <= 0) {
+        clearInterval(timer);
+        document.getElementById("quiz-form").requestSubmit();
+    }
+}, 1000);

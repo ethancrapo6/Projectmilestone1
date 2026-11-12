@@ -402,3 +402,103 @@ footer {
     border-radius: 5px;
     margin-bottom: 12px;
 }
+
+
+/* ==================================
+   Web Servers Quiz Styling
+   ================================== */
+
+/* Individual question cards */
+#quiz .quiz-question {
+    background-color: #f7fafc;
+    border: 1px solid #d5e3e8;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Question headings */
+#quiz .quiz-question h3 {
+    color: #006b80;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+/* Question descriptions */
+#quiz .quiz-question p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Put each answer on its own line */
+#quiz .quiz-question label:has(input[type="radio"]),
+#quiz .quiz-question label:has(input[type="checkbox"]) {
+    display: block;
+    padding: 10px 12px;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Highlight answers on hover */
+#quiz .quiz-question label:hover {
+    background-color: #e6f2f5;
+}
+
+/* Space between buttons and text */
+#quiz input[type="radio"],
+#quiz input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #007c91;
+}
+
+/* Fill-in-the-blank answer fields */
+#quiz input[type="text"] {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 12px;
+    margin-top: 10px;
+    border: 1px solid #b8cbd3;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/* Highlight text fields when selected */
+#quiz input[type="text"]:focus {
+    outline: 2px solid #007c91;
+    outline-offset: 2px;
+}
+
+/* Submit and Retake buttons */
+#submit-quiz,
+#retake-quiz {
+    background-color: #007c91;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px 10px 10px 0;
+}
+
+/* Button hover effect */
+#submit-quiz:hover,
+#retake-quiz:hover {
+    background-color: #00596b;
+}
+
+/* Disabled Submit button */
+#submit-quiz:disabled {
+    background-color: #a7b9bf;
+    cursor: not-allowed;
+}
+
+/* Keep the Retake button hidden until submission */
+#retake-quiz[hidden] {
+    display: none;
+}

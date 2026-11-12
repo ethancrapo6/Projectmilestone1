@@ -35,9 +35,9 @@ const correctAnswers = {
     q5: ["caching"],
     q6: ["reverse"],
     q7: ["cdn"],
-    q8: ["Apache HTTP Server", "Microsoft IIS", "Nginx"],
-    q9: ["Caching", "Load Balancing", "Content Delivery Networks"],
-    q10: [" HTTPS Encryption", "Firewalls", "Regular Software Updates"]
+    q8: ["a","b","c"],
+    q9: ["a","b","c"],
+    q10: ["a","b","c"]
 };
 
 // Listen for quiz submission

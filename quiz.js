@@ -1,27 +1,36 @@
 
+
 /* Web Servers Quiz - Countdown Timer */
 
-// Set the quiz time limit to 10 minutes
 let timeRemaining = 600;
 let elapsedTime = 0;
+let timer;
 
-// Update the countdown every second
-let timer = setInterval(function () {
-    timeRemaining--;
-    elapsedTime++;
+// Function to start or restart the countdown
+function startTimer() {
+    clearInterval(timer);
 
-    const minutes = Math.floor(timeRemaining / 60);
-    const seconds = timeRemaining % 60;
+    timer = setInterval(function () {
+        timeRemaining--;
+        elapsedTime++;
 
-    document.getElementById("timer").textContent =
-        `Time Remaining: ${minutes}:${String(seconds).padStart(2, "0")}`;
+        const minutes = Math.floor(timeRemaining / 60);
+        const seconds = timeRemaining % 60;
 
-    // Automatically submit when time runs out
-    if (timeRemaining <= 0) {
-        clearInterval(timer);
-        document.getElementById("quiz-form").requestSubmit();
-    }
-}, 1000);
+        document.getElementById("timer").textContent =
+            `Time Remaining: ${minutes}:${String(seconds).padStart(2, "0")}`;
+
+        // Submit automatically when time runs out
+        if (timeRemaining <= 0) {
+            clearInterval(timer);
+            document.getElementById("quiz-form").requestSubmit();
+        }
+    }, 1000);
+}
+
+// Start the first attempt
+startTimer();
+
 
 
 /* Quiz Grading System */
@@ -121,6 +130,7 @@ document.getElementById("retake-quiz").addEventListener("click", function () {
 
     document.getElementById("timer").textContent =
         "Time Remaining: 10:00";
+    startTimer();
 });
 
 clearInterval(timer);
